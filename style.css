@@ -1,0 +1,56 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #007acc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-buttons button {
+  margin: 0 10px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-buttons button:hover {
+  background-color: #005f9e;
+}
+
+/* DARK THEME */
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --accent-color: #38bdf8;
+}
+
+/* TECHNICAL THEME */
+body.technical {
+  --bg-color: #1e1e2e;
+  --text-color: #a6accd;
+  --accent-color: #cba6f7;
+}
